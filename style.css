@@ -1,0 +1,362 @@
+@media all {
+  /*pc e telas maiores*/
+
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    background-color: #ccf3f5;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  /*header*/
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 2px 2px 20px rgb(172, 172, 172);
+  }
+
+  .listaheader {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+  }
+
+  .listaheader a {
+    text-decoration: none;
+    color: rgb(99, 97, 97);
+  }
+
+  #perfilselecionado {
+    color: #ed2590;
+  }
+
+  header h1 {
+    color: #ed2590;
+    font-family: "Satisfy", cursive;
+  }
+
+  .header form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #lupa {
+    cursor: pointer;
+    opacity: 0.5;
+    vertical-align: middle;
+  }
+
+  header form input {
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(211, 210, 210);
+    width: 16em;
+  }
+
+  .headerperfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .headerperfil img {
+    width: 3em;
+    border-radius: 50%;
+  }
+
+  #iconpesquisa {
+    cursor: pointer;
+    color: #ed2590;
+  }
+
+  /*main*/
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 4em;
+  }
+
+  /*parte perfil*/
+
+  .DIVsectionperfil {
+    text-align: center;
+  }
+
+  .sectionperfil {
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+    border-radius: 20px;
+  }
+
+  .sectionperfil img {
+    width: 10em;
+    border-radius: 50%;
+    outline: 3px solid #ed2590;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .sectionperfil p {
+    margin-top: 10px;
+    color: grey;
+  }
+
+  .DIVsectionperfil button {
+    margin-top: 2em;
+    padding: 0.7em;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #ed2590;
+    width: 100%;
+    cursor: pointer;
+  }
+
+
+  /*parte conteudo*/
+
+  .sectionconteudo {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2em;
+    width: 30em;
+  }
+
+  .sectionconteudo>h1{
+    margin-bottom: 20px;
+    color: rgb(61, 61, 61);
+  }
+
+  .sectionconteudo>p{
+    text-indent: 1em;
+    color: rgb(87, 87, 87);
+    margin-bottom: 3em;
+  }
+
+  .emojis{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .emojis p{
+    margin-bottom: 10px;
+  }
+
+  #rosto{
+    color: rgb(209, 209, 2);
+  }
+
+  #legal{
+    color: rgb(0, 174, 255);
+  }
+
+  #coração{
+    color: #ed2590;
+  }
+
+  .conteudosobre{
+    margin-top: 2em;
+    line-height: 3em;
+  }
+
+  .conteudosobre p{
+    color: grey;
+  }
+
+  .conteudosobre strong{
+    color: rgb(41, 41, 41);
+  }
+
+  #musicasefilmes>strong{
+    border: 2px solid #ed2590;
+    padding: 0.4em;
+    margin-left: 0.3em;
+    border-radius: 20px;
+  }
+
+  #musicasefilmes>a{
+    text-decoration: none;
+    color: #ed2590;
+    margin-left: 2em;
+  }
+
+  /*parte amigos e comunidade*/
+
+  .sectionlateral {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .aside {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    width: 13em;
+  }
+
+  .amigosdiv, .comunidadesdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aside h2 {
+    font-size: 0.8em;
+    color: rgb(83, 83, 83);
+  }
+
+  .aside a {
+    font-size: 0.8em;
+    color: #ed2590;
+    text-decoration: none;
+  }
+
+  .imagensdaaside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .imagensdaaside img{
+    width: 50px;
+    border-radius: 50%;
+  }
+
+
+  /*footer*/
+
+  footer{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 4em;
+    text-align: center;
+    color: #ed2590;
+  }
+}
+
+/* Estilos para tablets */
+@media (max-width: 1200px) {
+  /*header*/
+
+  .header form {
+    display: none;
+  }
+
+  #lupa {
+    display: none;
+  }
+
+  header form input {
+    display: none;
+  }
+  /*main*/
+
+  main {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  /*parte perfil*/
+
+  .DIVsectionperfil button {
+    width: 40%;
+    border-radius: 40px;
+  }
+
+  /*parte conteudo*/
+
+  .sectionconteudo {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sectionconteudo>p{
+    background-color: rgba(128, 128, 128, 0.322);
+    border-radius: 20px;
+    padding: 1em;
+  }
+
+  /*parte amigos e comunidade*/
+
+  .sectionlateral {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .aside {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    width: 40%;
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /*header*/
+
+  .listaheader {
+    display: none;
+  }
+
+  .headerperfil img {
+    width: 2em;
+    border-radius: 50%;
+  }
+
+  /*parte conteudo*/
+  
+  .sectionconteudo {
+    width: 80%;
+    margin: auto;
+  }
+
+  /*parte amigos e comunidade*/
+
+  .sectionlateral {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside {
+    width: 80%;
+  }
+}
